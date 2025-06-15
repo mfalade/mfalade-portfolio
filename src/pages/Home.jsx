@@ -1,34 +1,51 @@
 import SocialIcons from '../components/SocialIcons';
+import {
+  HeroSection,
+  HeroMainRow,
+  HeroContent,
+  HeroTitleGroup,
+  SectionLabelGroup,
+  SectionLabel,
+  SectionBar,
+  SectionTitle,
+  HeroTitleWrapper,
+  HeroTitle,
+  HeroSummaryGroup,
+  SummaryBar,
+  SummaryContent,
+  HeroSummary,
+  ResumeButton
+} from '../styles/HeroStyles';
 
 const Home = () => {
   return (
-    <main className="hero-section">
-      <div className="hero-main-row">
-        <div className="hero-content">
-          <div className="hero-title-group">
-            <div className="section-label-group">
-              <div className="section-label">
-                <span className="section-bar"></span>
-                <span className="section-title">SOFTWARE ENGINEER</span>
-              </div>
-              <div className="hero-title-wrapper">
-                <h1 className="hero-title">Mayowa Ayodeji<br/>Falade</h1>
-              </div>
-            </div>
-            <div className="hero-summary-group">
-              <div className="summary-bar"></div>
-              <div className="summary-content">
-                <div className="hero-summary">
+    <HeroSection>
+      <HeroMainRow>
+        <HeroContent>
+          <HeroTitleGroup>
+            <SectionLabelGroup>
+              <SectionLabel>
+                <SectionBar />
+                <SectionTitle>SOFTWARE ENGINEER</SectionTitle>
+              </SectionLabel>
+              <HeroTitleWrapper>
+                <HeroTitle>Mayowa Ayodeji<br/>Falade</HeroTitle>
+              </HeroTitleWrapper>
+            </SectionLabelGroup>
+            <HeroSummaryGroup>
+              <SummaryBar />
+              <SummaryContent>
+                <HeroSummary>
                   Lorem ipsum dolor sit amet consectetur blah and something something. This would be my professional summary
-                </div>
-                <a className="resume-btn" href="#" target="_blank" rel="noopener noreferrer">View Resume</a>
-              </div>
+                </HeroSummary>
+                <ResumeButton href="#" target="_blank" rel="noopener noreferrer">View Resume</ResumeButton>
+              </SummaryContent>
               <SocialIcons />
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+            </HeroSummaryGroup>
+          </HeroTitleGroup>
+        </HeroContent>
+      </HeroMainRow>
+    </HeroSection>
   );
 };
 

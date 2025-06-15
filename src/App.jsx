@@ -1,30 +1,32 @@
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Logo from './components/Logo';
 import AnimatedBackground from './components/AnimatedBackground';
 import NavLinks from './components/NavLinks';
 import Home from './pages/Home';
 import About from './pages/About';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import GlobalStyles from './styles/GlobalStyles';
+import { PortfolioRoot, PortfolioHeader, LogoNav, LogoBox, LogoText } from './styles/LayoutStyles';
 
 function App() {
   return (
     <Router>
+      <GlobalStyles />
       <AnimatedBackground />
-      <div className="portfolio-root">
-        <header className="portfolio-header">
-          <div className="logo-nav">
-            <div className="logo-box">
-              <Logo className="logo-icon" />
-              <span className="logo-text">MF</span>
-            </div>
+      <PortfolioRoot>
+        <PortfolioHeader>
+          <LogoNav>
+            <LogoBox>
+              <Logo />
+              <LogoText>MF</LogoText>
+            </LogoBox>
             <NavLinks />
-          </div>
-        </header>
+          </LogoNav>
+        </PortfolioHeader>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
-      </div>
+      </PortfolioRoot>
     </Router>
   );
 }
