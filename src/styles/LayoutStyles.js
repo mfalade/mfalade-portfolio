@@ -14,6 +14,10 @@ export const PortfolioHeader = styled.header`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0 0 1rem;
+  }
 `;
 
 export const LogoNav = styled.div`
@@ -22,6 +26,10 @@ export const LogoNav = styled.div`
   width: 100%;
   justify-content: space-between;
   height: 60px;
+
+  @media (max-width: 768px) {
+    height: 50px;
+  }
 `;
 
 export const LogoBox = styled.div`
@@ -29,6 +37,11 @@ export const LogoBox = styled.div`
   align-items: center;
   gap: 0.5rem;
   height: 60px;
+
+  @media (max-width: 768px) {
+    height: 50px;
+    gap: 0.3rem;
+  }
 `;
 
 export const LogoIcon = styled.div`
@@ -41,12 +54,22 @@ export const LogoIcon = styled.div`
   color: #ff7e6b;
   font-weight: bold;
   margin-right: 0.2rem;
+
+  @media (max-width: 768px) {
+    height: 35px;
+    width: 35px;
+    font-size: 2rem;
+  }
 `;
 
 export const LogoText = styled.span`
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const MainNav = styled.nav`
@@ -58,6 +81,11 @@ export const MainNav = styled.nav`
     margin-right: 1rem;
     gap: 1.2rem;
   }
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+    margin-right: 0.5rem;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -67,6 +95,10 @@ export const NavLink = styled.a`
   font-weight: 400;
   letter-spacing: 0.05em;
   transition: color 0.2s;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 
   &.active, &:hover {
     color: #ff7e6b;
