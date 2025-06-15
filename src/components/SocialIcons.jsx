@@ -6,11 +6,9 @@ const SocialIconsContainer = styled.div`
   margin-top: 0;
   margin-left: 0;
   align-items: center;
-  justify-content: flex-end;
   height: auto;
   flex-shrink: 0;
   padding-right: 3rem;
-  align-self: flex-end;
 
   a {
     color: ${props => props.variant === 'orange' ? '#ff7e6b' : '#bdbdbd'};

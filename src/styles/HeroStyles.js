@@ -6,8 +6,7 @@ export const HeroSection = styled.section`
   align-items: flex-start;
   justify-content: flex-start;
   min-height: 80vh;
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
   margin-left: 0;
   margin-top: 4rem;
   box-sizing: border-box;
@@ -22,9 +21,9 @@ export const HeroSection = styled.section`
   }
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
+    margin-left: 0;
     margin-top: 1rem;
-    padding-left: 1rem;
+    padding-left: 0;
     min-height: 70vh;
   }
 `;
@@ -134,8 +133,7 @@ export const HeroSummaryGroup = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   padding-right: 8rem;
   padding-bottom: 4rem;
@@ -149,8 +147,7 @@ export const HeroSummaryGroup = styled.div`
     flex-direction: column;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    width: 100%;
-    max-width: 100%;
+    align-items: flex-start;
   }
 `;
 
@@ -186,6 +183,8 @@ export const HeroSummary = styled.p`
   @media (max-width: 768px) {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    max-width: 100%;
+    padding-right: 1rem;
   }
 `;
 
@@ -239,6 +238,7 @@ export const HeroSocials = styled.div`
     align-self: flex-start;
     margin-top: 1rem;
     width: 100%;
+    margin-left: 0;
   }
 
   a {
