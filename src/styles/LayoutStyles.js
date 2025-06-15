@@ -9,14 +9,13 @@ export const PortfolioRoot = styled.div`
 `;
 
 export const PortfolioHeader = styled.header`
-  width: 100%;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 
   @media (max-width: 768px) {
-    padding: 1rem 0 0 1rem;
+    padding: 1rem;
   }
 `;
 
@@ -75,16 +74,13 @@ export const LogoText = styled.span`
 export const MainNav = styled.nav`
   display: flex;
   gap: 2.5rem;
-  margin-right: 4rem;
 
   @media (max-width: 900px) {
-    margin-right: 1rem;
     gap: 1.2rem;
   }
 
   @media (max-width: 768px) {
     gap: 1rem;
-    margin-right: 0.5rem;
   }
 `;
 

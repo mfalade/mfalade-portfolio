@@ -7,12 +7,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', 'Georgia', serif;
     min-height: 100vh;
     margin: 0;
-    padding: 0 1rem;
     box-sizing: border-box;
-
-    @media (min-width: 769px) {
-      padding: 0;
-    }
   }
 `;
 

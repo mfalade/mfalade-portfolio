@@ -13,12 +13,12 @@ const CONFIG = {
     LINE_DISTANCE: 160,
   },
   TABLET: {
-    NUM_CIRCLES: 15,
+    NUM_CIRCLES: 13,
     LINE_DISTANCE: 200,
   },
   DESKTOP: {
-    NUM_CIRCLES: 18,
-    LINE_DISTANCE: 250,
+    NUM_CIRCLES: 15,
+    LINE_DISTANCE: 270,
   },
 };
 

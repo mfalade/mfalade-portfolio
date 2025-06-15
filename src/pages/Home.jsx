@@ -1,7 +1,6 @@
 import SocialIcons from '../components/SocialIcons';
 import {
   HeroSection,
-  HeroMainRow,
   HeroContent,
   HeroTitleGroup,
   SectionLabelGroup,
@@ -14,37 +13,38 @@ import {
   SummaryBar,
   SummaryContent,
   HeroSummary,
-  ResumeButton
+  ResumeButton,
+  SocialIconsGroup,
 } from '../styles/HeroStyles';
 
 const Home = () => {
   return (
     <HeroSection>
-      <HeroMainRow>
-        <HeroContent>
-          <HeroTitleGroup>
-            <SectionLabelGroup>
-              <SectionLabel>
-                <SectionBar />
-                <SectionTitle>SOFTWARE ENGINEER</SectionTitle>
-              </SectionLabel>
-              <HeroTitleWrapper>
-                <HeroTitle>Mayowa Ayodeji<br/>Falade</HeroTitle>
-              </HeroTitleWrapper>
-            </SectionLabelGroup>
-            <HeroSummaryGroup>
-              <SummaryBar />
-              <SummaryContent>
-                <HeroSummary>
-                  Lorem ipsum dolor sit amet consectetur blah and something something. This would be my professional summary
-                </HeroSummary>
-                <ResumeButton href="#" target="_blank" rel="noopener noreferrer">View Resume</ResumeButton>
-              </SummaryContent>
+      <HeroContent>
+        <HeroTitleGroup>
+          <SectionLabelGroup>
+            <SectionLabel>
+              <SectionBar />
+              <SectionTitle>SOFTWARE ENGINEER</SectionTitle>
+            </SectionLabel>
+            <HeroTitleWrapper>
+              <HeroTitle>Mayowa Ayodeji<br/>Falade</HeroTitle>
+            </HeroTitleWrapper>
+          </SectionLabelGroup>
+          <HeroSummaryGroup>
+            <SummaryBar />
+            <SummaryContent>
+              <HeroSummary>
+                Lorem ipsum dolor sit amet consectetur blah and something something. This would be my professional summary
+              </HeroSummary>
+              <ResumeButton href="#" target="_blank" rel="noopener noreferrer">VIEW RESUME</ResumeButton>
+            </SummaryContent>
+            <SocialIconsGroup>
               <SocialIcons />
-            </HeroSummaryGroup>
-          </HeroTitleGroup>
-        </HeroContent>
-      </HeroMainRow>
+            </SocialIconsGroup>
+          </HeroSummaryGroup>
+        </HeroTitleGroup>
+      </HeroContent>
     </HeroSection>
   );
 };

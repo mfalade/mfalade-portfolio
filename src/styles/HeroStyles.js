@@ -6,51 +6,29 @@ export const HeroSection = styled.section`
   align-items: flex-start;
   justify-content: flex-start;
   min-height: 80vh;
-  width: 100%;
   margin-left: 0;
   margin-top: 4rem;
   box-sizing: border-box;
-  padding-left: 8rem;
-  overflow-x: hidden;
+  padding: 0 8rem;
   flex: 1 1 0;
 
   @media (max-width: 900px) {
-    margin-left: 2rem;
     margin-top: 2rem;
     padding-left: 2rem;
   }
 
   @media (max-width: 768px) {
-    margin-left: 0;
     margin-top: 1rem;
-    padding-left: 0;
-    min-height: 70vh;
-  }
-`;
-
-export const HeroMainRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  flex: 1 1 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
+    padding: 0 1rem;
   }
 `;
 
 export const HeroContent = styled.div`
-  max-width: 700px;
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100%;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
 `;
 
 export const HeroTitleGroup = styled.div`
@@ -135,17 +113,14 @@ export const HeroSummaryGroup = styled.div`
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 8rem;
   padding-bottom: 4rem;
 
   @media (max-width: 900px) {
-    padding-right: 2rem;
     padding-bottom: 2rem;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-right: 1rem;
     padding-bottom: 1rem;
     align-items: flex-start;
   }
@@ -263,3 +238,10 @@ export const HeroSocials = styled.div`
     }
   }
 `; 
+
+export const SocialIconsGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height:100%;
+`;

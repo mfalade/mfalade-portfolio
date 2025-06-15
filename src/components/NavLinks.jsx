@@ -45,10 +45,8 @@ const StyledAnchor = styled.a`
 const MainNav = styled.nav`
   display: flex;
   gap: 2.5rem;
-  margin-right: 4rem;
 
   @media (max-width: 900px) {
-    margin-right: 1rem;
     gap: 1.2rem;
   }
 
@@ -76,7 +74,6 @@ const MenuButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
-  margin-right: 1rem;
 
   @media (max-width: 768px) {
     display: block;

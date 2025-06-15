@@ -37,6 +37,7 @@ const About = () => (
       <p>I continued to learn web development on my own until I heard about this Talent Accelerator called Andela. Andela boasts that only the top 1% of applicants get hired. I immediately dropped my</p>
       <p>yazvi</p>
     </AboutSummary>
+    <AboutDivider />
     <SocialIcons variant="orange" />
     <AboutDivider />
     <AboutSection>
