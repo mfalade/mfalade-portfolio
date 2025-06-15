@@ -78,7 +78,6 @@ const MenuButton = styled.button`
   padding: 0.5rem;
   width: 30px;
   height: 30px;
-  display: flex;
   align-items: center;
   justify-content: center;
   outline: none;

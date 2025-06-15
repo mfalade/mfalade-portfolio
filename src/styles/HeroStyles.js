@@ -5,19 +5,20 @@ export const HeroSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-height: calc(100vh - 120px);
   margin-left: 0;
   margin-top: 4rem;
   box-sizing: border-box;
+  min-height: calc(100vh - 180px);
   padding: 0 8rem;
   flex: 1 1 0;
-
+  
   @media (max-width: 900px) {
     margin-top: 2rem;
     padding-left: 2rem;
-  }
-
-  @media (max-width: 768px) {
+    }
+    
+    @media (max-width: 768px) {
+    min-height: calc(100vh - 120px);
     margin-top: 1rem;
     padding: 0 1rem;
   }
@@ -55,11 +56,6 @@ export const SectionLabel = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 1.5rem;
-
-  @media (max-width: 768px) {
-    margin-bottom: 1rem;
-  }
 `;
 
 export const SectionBar = styled.div`
@@ -90,19 +86,19 @@ export const SectionTitle = styled.h2`
 export const HeroTitle = styled.h1`
   font-size: 3.5rem;
   font-weight: 800;
-  margin: 2.2rem 0 3.5rem 0;
+  margin: 0 0 3.5rem 0;
   line-height: 1.1;
   font-family: 'Montserrat', 'Georgia', serif;
   display: block;
 
   @media (max-width: 900px) {
     font-size: 2.2rem;
-    margin: 1.8rem 0 2.8rem 0;
+    margin-bottom: 0 0 2.8rem 0;
   }
 
   @media (max-width: 768px) {
     font-size: 2rem;
-    margin: 1.5rem 0 2.5rem 0;
+    margin: 0 0 2.5rem 0;
   }
 `;
 
