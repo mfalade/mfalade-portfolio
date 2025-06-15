@@ -5,7 +5,7 @@ export const HeroSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-height: 80vh;
+  min-height: calc(100vh - 120px);
   margin-left: 0;
   margin-top: 4rem;
   box-sizing: border-box;

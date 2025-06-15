@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const StyledNavLink = styled(NavLink)`
   color: #fff;
@@ -74,9 +76,20 @@ const MenuButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+
+  &:focus {
+    outline: 2px solid #ff7e6b;
+    outline-offset: 2px;
+  }
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
   }
 `;
 
@@ -90,7 +103,7 @@ const NavLinks = () => {
   return (
     <>
       <MenuButton onClick={toggleMenu} aria-label="Toggle menu">
-        {isOpen ? '✕' : '☰'}
+        <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
       </MenuButton>
       <MainNav isOpen={isOpen}>
         <StyledNavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => setIsOpen(false)}>HOME</StyledNavLink>
