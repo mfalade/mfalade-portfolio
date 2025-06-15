@@ -110,7 +110,6 @@ export const HeroSummaryGroup = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding-bottom: 4rem;
-  flex: 1;
 
   @media (max-width: 900px) {
     padding-bottom: 2rem;
@@ -120,8 +119,6 @@ export const HeroSummaryGroup = styled.div`
     flex-direction: column;
     padding-bottom: 1rem;
     align-items: flex-start;
-    justify-content: center;
-    min-height: 50vh;
   }
 `;
 
@@ -144,9 +141,6 @@ export const SummaryContent = styled.div`
 
   @media (max-width: 768px) {
     margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 `;
 
@@ -156,10 +150,8 @@ export const HeroSummary = styled.p`
   margin-bottom: 2rem;
   margin-left: 0;
   max-width: 420px;
-  margin-top: 0;
-  
+
   @media (max-width: 768px) {
-    margin-top: 4rem;
     font-size: 1rem;
     margin-bottom: 1.5rem;
     max-width: 100%;
@@ -215,10 +207,9 @@ export const HeroSocials = styled.div`
     gap: 1.5rem;
     justify-content: flex-start;
     align-self: flex-start;
-    margin-top: auto;
+    margin-top: 1rem;
     width: 100%;
     margin-left: 0;
-    padding-top: 2rem;
   }
 
   a {
